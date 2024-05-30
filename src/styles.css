@@ -1,0 +1,76 @@
+/* styles.css */
+.TodoWrapper {
+    max-width: 600px;
+    margin:0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .TodoForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .todo-input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #444343;
+  }
+  
+  .todo-btn {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .todo-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .Todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  .Todo p {
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .Todo p.completed {
+    text-decoration: line-through;
+  }
+  
+  .Todo div button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .Todo div button:first-child {
+    background-color: #df7803;
+    color: white;
+  }
+  
+  .Todo div button:last-child {
+    background-color: #dc3545;
+    color: white;
+  }
+  
