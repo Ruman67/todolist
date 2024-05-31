@@ -1,4 +1,3 @@
-// TodoWrapper.js
 import React, { useState } from 'react';
 import TodoForm from './TodoForm';
 import Todo from './Todo';
@@ -8,8 +7,8 @@ import { v4 as uuidv4 } from 'uuid';
 const TodoWrapper = () => {
   const [todos, setTodos] = useState([]);
 
-  const addTodo = (task) => {
-    setTodos([...todos, { id: uuidv4(), task, completed: false, isEditing: false }]);
+  const addTodo = (task, reminder) => {
+    setTodos([...todos, { id: uuidv4(), task, completed: false, isEditing: false, reminder }]);
   };
 
   const toggleComplete = (id) => {
@@ -42,7 +41,7 @@ const TodoWrapper = () => {
 
   return (
     <div className='TodoWrapper'>
-      <h1>Things to do!!!</h1>
+      <center><h1>Things to do!!!</h1></center>
       <TodoForm addTodo={addTodo} />
       {todos.map((todo) =>
         todo.isEditing ? (
