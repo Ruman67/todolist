@@ -73,4 +73,9 @@
     background-color: #dc3545;
     color: white;
   }
-  
+  .reminder {
+    display: block;
+    font-size: 0.8em;
+    color: #ff6347;
+    margin-top: 5px;
+  }
